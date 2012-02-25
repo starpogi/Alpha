@@ -1,0 +1,13 @@
+Developed on Texas Instruments MSP430 G2331 Microcontroller using 32 KHz
+standard clock oscillator. Implemented on ID-20 Innovations 125 kHz RFID Reader
+and GDM1620K 16x2 LCD Screen.
+
+The algorithm used to detect presence using Wiegand protocol will be
+used in the future Smart House Control projects, particularly Blackstorm.
+A watchdog timer ticks at about 100 microseconds to take in every byte
+from the RFID reader via asynchronous interrupts. This standard has
+nuances on data transmission. The last nth and (n-1)th bytes are usually
+corrupted, possible due to wiring problems or timing difficulties. This
+will be addressed by Project Blackstorm as it aims to develop robust
+simple interoperable platforms for streaming information to other Smart
+House Control modules.
